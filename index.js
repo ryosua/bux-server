@@ -43,7 +43,9 @@ const resolvers = {
 // definition and your set of resolvers.
 const server = new ApolloServer({
   typeDefs,
-  resolvers
+  resolvers,
+  playground: true,
+  introspection: true
 });
 
 // The `listen` method launches a web server.
